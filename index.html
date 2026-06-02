@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>陽育こども未来Lab. | 特定非営利活動法人</title>
-<meta name="description" content="発達に特性のある子どもとご家族に寄り添い、専門的な療育と温かい支援を提供するNPO法人です。関西国際大学と連携し、地域に根ざした支援を実践しています。">
+<title>陽育こども未来Lab. | 尼崎市の児童発達支援事業所（NPO法人）</title>
+<meta name="description" content="2026年10月、尼崎市に新規オープン予定。発達に特性のある子どもとご家族に寄り添い、専門的な療育と温かい支援を提供するNPO法人です。関西国際大学と連携し、地域に根ざした支援を実践しています。">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
@@ -41,23 +41,29 @@
   .c1{width:320px;height:320px;background:var(--orange);top:-90px;left:-90px}
   .c2{width:200px;height:200px;background:var(--green);bottom:-60px;right:-60px}
   .c3{width:120px;height:120px;background:var(--orange);top:35%;right:6%}
-  .hero-tag{display:inline-block;background:var(--orange-light);color:var(--orange);border:1px solid var(--orange-mid);border-radius:20px;padding:5px 18px;font-size:13px;margin-bottom:1.5rem}
-  .hero-name{font-family:'Noto Serif JP',serif;font-size:clamp(13px,2vw,16px);color:var(--text-muted);margin-bottom:.4rem;letter-spacing:.05em}
+  .hero-tag{display:inline-block;background:#fff;color:var(--orange);border:2px solid var(--orange);border-radius:20px;padding:5px 18px;font-size:14px;font-weight:700;margin-bottom:1.5rem}
   .hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(26px,4vw,44px);font-weight:700;color:var(--brown);line-height:1.5;margin-bottom:1.2rem}
   .hero h1 span{color:var(--orange)}
   .hero-sub{font-size:15px;color:var(--text-muted);max-width:580px;margin:0 auto 2rem;line-height:1.9}
   .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .btn-primary{background:var(--orange);color:#fff;border:none;padding:13px 28px;border-radius:28px;font-size:15px;cursor:pointer;font-family:inherit;font-weight:500;transition:opacity .2s}
-  .btn-primary:hover{opacity:.88}
+  .btn-primary{background:var(--orange);color:#fff;border:none;padding:13px 28px;border-radius:28px;font-size:15px;cursor:pointer;font-family:inherit;font-weight:500;transition:opacity .2s;box-shadow:0 4px 12px rgba(232,115,74,.3)}
+  .btn-primary:hover{opacity:.88;transform:translateY(-2px)}
   .btn-secondary{background:#fff;color:var(--orange);border:2px solid var(--orange);padding:12px 28px;border-radius:28px;font-size:15px;cursor:pointer;font-family:inherit;font-weight:500;transition:all .2s}
   .btn-secondary:hover{background:var(--orange-light)}
+
+  /* ===== NEWS BAR ===== */
+  .news-bar{background:#fff;border-bottom:1px solid var(--orange-mid);padding:1rem 2rem;display:flex;justify-content:center}
+  .news-inner{display:flex;align-items:center;gap:16px;max-width:800px;width:100%;background:var(--orange-light);padding:12px 20px;border-radius:8px;border:1px dashed var(--orange-mid)}
+  .news-date{font-size:13px;font-weight:700;color:var(--orange);white-space:nowrap}
+  .news-badge{background:var(--orange);color:#fff;font-size:11px;padding:2px 8px;border-radius:12px;font-weight:500}
+  .news-text{font-size:14px;color:var(--brown);font-weight:500;flex-grow:1}
 
   /* ===== CARDS ===== */
   .cards-section{padding:4rem 2rem;max-width:1000px;margin:0 auto}
   .section-label{text-align:center;color:var(--orange);font-size:13px;font-weight:500;letter-spacing:.06em;margin-bottom:.5rem}
   .section-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,3vw,30px);font-weight:700;color:var(--brown);text-align:center;margin-bottom:.8rem}
   .section-sub{text-align:center;color:var(--text-muted);font-size:14px;margin-bottom:2.5rem;line-height:1.8}
-  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
   .card{background:#fff;border-radius:var(--radius);border:1px solid var(--orange-mid);padding:1.5rem;transition:transform .2s,box-shadow .2s}
   .card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(232,115,74,.12)}
   .card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:1rem}
@@ -87,8 +93,16 @@
   .university h2{font-family:'Noto Serif JP',serif;font-size:22px;color:#2c5d45;margin-bottom:.8rem}
   .university p{font-size:14px;color:#4a7a60;line-height:1.9;max-width:600px;margin:0 auto}
 
+  /* ===== ACCESS (NEW) ===== */
+  .access{padding:4rem 2rem;max-width:800px;margin:0 auto;text-align:center}
+  .access-box{background:#fff;border:1px solid var(--orange-mid);border-radius:24px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,.03)}
+  .access-title{font-family:'Noto Serif JP',serif;font-size:20px;color:var(--brown);font-weight:700;margin-bottom:1rem}
+  .access-info{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem}
+  .access-info strong{color:var(--brown)}
+  .access-note{font-size:13px;color:var(--orange);background:var(--orange-light);padding:10px;border-radius:8px;display:inline-block}
+
   /* ===== INSTAGRAM ===== */
-  .insta-section{padding:4rem 2rem;max-width:1000px;margin:0 auto}
+  .insta-section{padding:0 2rem 4rem;max-width:1000px;margin:0 auto}
   .insta-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
   .insta-profile{display:flex;align-items:center;gap:14px}
   .insta-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#f5a05a,#e8734a,#c84b8a);display:flex;align-items:center;justify-content:center;font-size:26px;padding:3px}
@@ -102,18 +116,14 @@
   .insta-post-emoji{font-size:28px}
   .insta-post-text{font-size:11px;color:var(--text-muted);line-height:1.5}
   .insta-post-tag{font-size:10px;color:var(--orange);font-weight:500}
-  .insta-post:hover .insta-overlay{opacity:1}
-  .insta-overlay{position:absolute;inset:0;background:rgba(232,115,74,.18);opacity:0;transition:opacity .2s;border-radius:12px;display:flex;align-items:center;justify-content:center}
-  .insta-overlay span{font-size:11px;color:var(--brown);font-weight:500;background:#fff;border-radius:20px;padding:4px 12px}
-  .insta-note{text-align:center;margin-top:1.2rem;font-size:12px;color:var(--text-muted)}
 
   /* ===== CONTACT ===== */
-  .contact{background:linear-gradient(135deg,#f5a05a 0%,#e8734a 100%);padding:4rem 2rem;text-align:center}
+  .contact{background:linear-gradient(135deg,#f5a05a 0%,#e8734a 100%);padding:5rem 2rem;text-align:center}
   .contact-org{font-family:'Noto Serif JP',serif;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:.4rem}
-  .contact h2{font-family:'Noto Serif JP',serif;color:#fff;font-size:24px;margin-bottom:.8rem}
-  .contact p{color:rgba(255,255,255,.88);font-size:14px;margin-bottom:2rem;line-height:1.9}
-  .contact-btn{background:#fff;color:var(--orange);border:none;padding:14px 36px;border-radius:28px;font-size:15px;cursor:pointer;font-family:inherit;font-weight:700;transition:opacity .2s}
-  .contact-btn:hover{opacity:.9}
+  .contact h2{font-family:'Noto Serif JP',serif;color:#fff;font-size:28px;margin-bottom:.8rem}
+  .contact p{color:rgba(255,255,255,.9);font-size:15px;margin-bottom:2rem;line-height:1.9;font-weight:500}
+  .contact-btn{background:#fff;color:var(--orange);border:none;padding:16px 40px;border-radius:30px;font-size:16px;cursor:pointer;font-family:inherit;font-weight:700;transition:all .2s;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+  .contact-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,0,0,.2)}
 
   /* ===== FOOTER ===== */
   footer{background:#fdf0e4;border-top:1px solid var(--orange-mid);padding:2rem;text-align:center}
@@ -125,6 +135,7 @@
     .mission-inner{grid-template-columns:1fr}
     .nav-links{display:none}
     .insta-grid{grid-template-columns:repeat(2,1fr)}
+    .news-inner{flex-direction:column;align-items:flex-start;gap:8px}
   }
 </style>
 </head>
@@ -143,8 +154,8 @@
     <li><a href="#about">私たちについて</a></li>
     <li><a href="#support">支援内容</a></li>
     <li><a href="#university">大学連携</a></li>
-    <li><a href="#instagram">インスタグラム</a></li>
-    </ul>
+    <li><a href="#access">アクセス</a></li>
+  </ul>
   <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">お問い合わせ</button>
 </nav>
 
@@ -154,18 +165,27 @@
     <div class="circle c2"></div>
     <div class="circle c3"></div>
   </div>
-  <div class="hero-tag">🌸 児童発達支援事業所</div>
+  <div class="hero-tag">🌟 2026年10月 尼崎市に新規オープン予定！</div>
   <h1>すべての子どもに、<br><span>自分らしく</span>育つ場所を。</h1>
   <p class="hero-sub">発達に特性のある子どもとご家族に寄り添い、専門的な療育と温かい支援を提供するNPO法人です。関西国際大学と連携し、地域に根ざした支援を実践しています。</p>
   <div class="hero-btns">
-    <button class="btn-primary" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">活動内容を見る ▶</button>
-    <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">相談・見学のお申し込み</button>
+    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">【先行受付】相談・見学を申し込む</button>
+    <button class="btn-secondary" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">活動内容を見る</button>
   </div>
 </section>
 
+<!-- 新設：ニュースバー -->
+<div class="news-bar">
+  <div class="news-inner">
+    <div class="news-date">2026.06.01</div>
+    <div class="news-badge">お知らせ</div>
+    <div class="news-text">10月の事業所オープンに向けた、事前の個別相談・見学予約の受付を開始いたしました。</div>
+  </div>
+</div>
+
 <section class="cards-section" id="support">
   <div class="section-label">わたしたちの支援</div>
-  <h2 class="section-title">3つの柱で、お子さまを支えます</h2>
+  <h2 class="section-title">4つの柱で、お子さまとご家族を支えます</h2>
   <p class="section-sub">早期発見・早期支援を大切に、一人ひとりの発達に合わせた専門的なサポートを提供します。</p>
   <div class="cards-grid">
     <div class="card">
@@ -182,6 +202,12 @@
       <div class="card-icon icon-orange">🏫</div>
       <h3>地域・学校との連携</h3>
       <p>幼稚園・保育所・小学校と連携し、日常生活の中での継続的な支援体制を整えます。地域全体で子どもたちを見守ります。</p>
+    </div>
+    <!-- 新設：防災・安全のカード -->
+    <div class="card">
+      <div class="card-icon icon-green">🛡️</div>
+      <h3>安心・安全の環境づくり</h3>
+      <p>元保育所の衛生的なスペースを活用。日頃からの防災教育や災害時の備えにも力を入れ、お子さまを安全にお預かりする環境を整えています。</p>
     </div>
   </div>
 </section>
@@ -217,83 +243,47 @@
   </div>
 </section>
 
+<!-- 新設：アクセスセクション -->
+<section class="access" id="access">
+  <div class="section-label">アクセス</div>
+  <div class="access-box">
+    <div class="access-title">陽育こども未来Lab. 尼崎事業所</div>
+    <div class="access-info">
+      〒660-xxxx<br>
+      <strong>兵庫県尼崎市（詳細な住所は準備中）</strong><br>
+      ※元保育所の安全な施設を現在リニューアル中です。<br>
+      ※駐車場の有無や最寄り駅からのアクセスは後日公開いたします。
+    </div>
+    <div class="access-note">💡 オープン前の先行相談は、オンラインや別会場でも対応可能です。</div>
+  </div>
+</section>
+
 <section class="insta-section" id="instagram">
   <div class="section-label">SNS</div>
   <h2 class="section-title">Instagram</h2>
-  <p class="section-sub">活動の様子や最新情報をインスタグラムで発信しています。ぜひフォローしてください！</p>
   <div class="insta-header">
     <div class="insta-profile">
-      <div class="insta-avatar">
-        <div class="insta-avatar-inner">🌞</div>
-      </div>
+      <div class="insta-avatar"><div class="insta-avatar-inner">🌞</div></div>
       <div>
         <div class="insta-handle">@yoiku_mirai_lab</div>
         <div class="insta-name">陽育こども未来Lab.（準備中）</div>
       </div>
     </div>
-    <a class="insta-link-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      Instagramを見る
-    </a>
+    <a class="insta-link-btn" href="https://www.instagram.com/" target="_blank">Instagramを見る</a>
   </div>
   <div class="insta-grid">
-    <div class="insta-post">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">🌸</div>
-        <div class="insta-post-text">活動のようす・<br>療育プログラム</div>
-        <div class="insta-post-tag">#陽育こども未来Lab</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
-    <div class="insta-post" style="background:var(--green-light);border-color:#b8dccb">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">🎓</div>
-        <div class="insta-post-text">大学連携・<br>学生ボランティア</div>
-        <div class="insta-post-tag">#関西国際大学</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
-    <div class="insta-post">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">👨‍👩‍👧</div>
-        <div class="insta-post-text">保護者向け<br>イベント情報</div>
-        <div class="insta-post-tag">#保護者支援</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
-    <div class="insta-post" style="background:var(--green-light);border-color:#b8dccb">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">🧩</div>
-        <div class="insta-post-text">療育のヒント・<br>発達サポート情報</div>
-        <div class="insta-post-tag">#児童発達支援</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
-    <div class="insta-post">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">🌻</div>
-        <div class="insta-post-text">スタッフ紹介・<br>日々のこと</div>
-        <div class="insta-post-tag">#NPO</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
-    <div class="insta-post" style="background:var(--green-light);border-color:#b8dccb">
-      <div class="insta-post-inner">
-        <div class="insta-post-emoji">📢</div>
-        <div class="insta-post-text">お知らせ・<br>最新情報</div>
-        <div class="insta-post-tag">#地域連携</div>
-      </div>
-      <div class="insta-overlay"><span>Instagramで見る</span></div>
-    </div>
+    <div class="insta-post"><div class="insta-post-inner"><div class="insta-post-emoji">🌸</div><div class="insta-post-text">活動のようす</div></div></div>
+    <div class="insta-post" style="background:var(--green-light);border-color:#b8dccb"><div class="insta-post-inner"><div class="insta-post-emoji">🎓</div><div class="insta-post-text">大学連携</div></div></div>
+    <div class="insta-post"><div class="insta-post-inner"><div class="insta-post-emoji">👨‍👩‍👧</div><div class="insta-post-text">イベント情報</div></div></div>
   </div>
-  <p class="insta-note">※ アカウント開設後、実際の投稿が表示されます。現在準備中です。</p>
 </section>
 
 <section class="contact" id="contact">
-  <div class="contact-org">特定非営利活動法人　陽育こども未来Lab.</div>
+  <div class="contact-org">10月オープン！先行相談を受付中です</div>
   <h2>お気軽にご相談ください</h2>
-  <p>「うちの子、少し気になることがあって……」<br>そんな小さな不安からでも、ぜひお声がけください。<br>専門スタッフが丁寧にお答えします。</p>
-  <button class="contact-btn" onclick="window.open('https://forms.gle/あなたのフォームのID', '_blank')">相談・見学のお申し込み</button>
+  <p>「うちの子、少し気になることがあって……」<br>「オープン前に一度話を聞いてみたい」<br>そんな小さな不安や疑問からでも、ぜひお声がけください。<br>専門スタッフが丁寧にお答えします。</p>
+  <!-- ▼ GoogleフォームのURLに書き換えてください -->
+  <button class="contact-btn" onclick="window.open('https://forms.gle/あなたのフォームのID', '_blank')">先行相談・見学のお申し込み</button>
 </section>
 
 <footer>
