@@ -58,29 +58,27 @@
   .news-badge{background:var(--orange);color:#fff;font-size:11px;padding:2px 8px;border-radius:12px;font-weight:500}
   .news-text{font-size:14px;color:var(--brown);font-weight:500;flex-grow:1}
 
-  /* ===== CROWDFUNDING (NEW) ===== */
-  .crowdfunding{background:linear-gradient(135deg,#fff8f0 0%,#fde2d3 100%);padding:3.5rem 2rem;text-align:center;border-bottom:1px solid var(--orange-mid)}
-  .cf-inner{max-width:800px;margin:0 auto}
-  .cf-badge{display:inline-block;background:#e83e8c;color:#fff;font-size:12px;font-weight:700;padding:6px 16px;border-radius:20px;margin-bottom:1.2rem;letter-spacing:0.05em}
-  .cf-title{font-family:'Noto Serif JP',serif;font-size:clamp(18px,2.5vw,26px);color:var(--brown);font-weight:700;margin-bottom:1rem;line-height:1.5}
-  .cf-title span{color:#e83e8c;border-bottom:2px solid #e83e8c}
-  .cf-desc{font-size:14px;color:var(--text-muted);line-height:1.9;margin-bottom:2rem;text-align:left;background:rgba(255,255,255,0.6);padding:1.5rem;border-radius:12px}
-  .cf-btn{display:inline-flex;align-items:center;gap:8px;background:#e83e8c;color:#fff;border:none;padding:15px 36px;border-radius:30px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 15px rgba(232,62,140,0.3)}
-  .cf-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(232,62,140,0.4)}
-
-  /* ===== CARDS ===== */
-  .cards-section{padding:4rem 2rem;max-width:1000px;margin:0 auto}
+  /* ===== PROGRAMS (REVISED) ===== */
+  .programs-section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
   .section-label{text-align:center;color:var(--orange);font-size:13px;font-weight:500;letter-spacing:.06em;margin-bottom:.5rem}
-  .section-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,3vw,30px);font-weight:700;color:var(--brown);text-align:center;margin-bottom:.8rem}
-  .section-sub{text-align:center;color:var(--text-muted);font-size:14px;margin-bottom:2.5rem;line-height:1.8}
-  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
-  .card{background:#fff;border-radius:var(--radius);border:1px solid var(--orange-mid);padding:1.5rem;transition:transform .2s,box-shadow .2s}
+  .section-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,3vw,30px);font-weight:700;color:var(--brown);text-align:center;margin-bottom:1.2rem;line-height:1.4}
+  .section-sub{text-align:center;color:var(--text-muted);font-size:14px;margin-bottom:3rem;line-height:1.9;max-width:700px;margin-left:auto;margin-right:auto}
+  
+  .program-pillars{background:var(--orange-light);border:1px solid var(--orange-mid);border-radius:24px;padding:2.5rem;margin-bottom:3rem;text-align:center}
+  .pillars-title{font-family:'Noto Serif JP',serif;color:var(--brown);font-size:18px;margin-bottom:1.5rem}
+  .pillars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:1.5rem}
+  .pillar{background:#fff;padding:1.5rem;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+  .pillar-icon{font-size:32px;margin-bottom:0.8rem}
+  .pillar h4{color:var(--orange);font-size:14px;font-weight:700;line-height:1.5}
+  .pillars-note{font-size:12px;color:var(--text-muted);text-align:left;display:inline-block;background:rgba(255,255,255,0.6);padding:10px 16px;border-radius:8px}
+
+  .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+  .card{background:#fff;border-radius:var(--radius);border:1px solid var(--orange-mid);padding:2rem;transition:transform .2s,box-shadow .2s;position:relative}
   .card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(232,115,74,.12)}
-  .card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:1rem}
-  .icon-orange{background:var(--orange-light)}
-  .icon-green{background:var(--green-light)}
-  .card h3{font-size:15px;font-weight:700;color:var(--brown);margin-bottom:.5rem}
-  .card p{font-size:13px;color:var(--text-muted);line-height:1.8}
+  .card-badge{display:inline-block;background:var(--green-light);color:var(--green);padding:6px 14px;border-radius:16px;font-size:12px;font-weight:700;margin-bottom:1rem;border:1px solid #b8dccb}
+  .card h3{font-size:18px;font-weight:700;color:var(--brown);margin-bottom:0.8rem;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+  .card h3 span{font-size:13px;color:var(--orange);font-weight:500;background:var(--orange-light);padding:4px 10px;border-radius:12px}
+  .card p{font-size:14px;color:var(--text-muted);line-height:1.9}
 
   /* ===== MISSION ===== */
   .mission{background:#fff;padding:4rem 2rem}
@@ -95,7 +93,7 @@
   .tag{background:var(--green-light);color:var(--green);border:1px solid #b8dccb;border-radius:16px;padding:4px 14px;font-size:12px}
 
   /* ===== UNIVERSITY ===== */
-  .university{background:var(--green-light);padding:3.5rem 2rem;border-top:1px solid #b8dccb;border-bottom:1px solid #b8dccb}
+  .university{background:var(--green-light);padding:4rem 2rem;border-top:1px solid #b8dccb;border-bottom:1px solid #b8dccb}
   .university-inner{max-width:800px;margin:0 auto;text-align:center}
   .univ-badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid #b8dccb;border-radius:12px;padding:.75rem 1.5rem;margin-bottom:1.5rem}
   .univ-icon{width:32px;height:32px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
@@ -161,11 +159,9 @@
   </div>
   <ul class="nav-links">
     <li><a href="#about">私たちについて</a></li>
-    <li><a href="#support">支援内容</a></li>
+    <li><a href="#support">療育プログラム</a></li>
     <li><a href="#university">大学連携</a></li>
     <li><a href="#access">アクセス</a></li>
-    <!-- CFへのリンクを追加し、色を変えて目立たせました -->
-    <li><a href="#crowdfunding" style="color:var(--orange);font-weight:700;">ご支援のお願い</a></li>
   </ul>
   <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">お問い合わせ</button>
 </nav>
@@ -181,7 +177,7 @@
   <p class="hero-sub">発達に特性のある子どもとご家族に寄り添い、専門的な療育と温かい支援を提供するNPO法人です。関西国際大学と連携し、地域に根ざした支援を実践しています。</p>
   <div class="hero-btns">
     <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">【先行受付】相談・見学を申し込む</button>
-    <button class="btn-secondary" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">活動内容を見る</button>
+    <button class="btn-secondary" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">療育プログラムを見る</button>
   </div>
 </section>
 
@@ -193,44 +189,53 @@
   </div>
 </div>
 
-<!-- ★新設：クラウドファンディングセクション -->
-<section class="crowdfunding" id="crowdfunding">
-  <div class="cf-inner">
-    <div class="cf-badge">📣 クラウドファンディング挑戦予定！</div>
-    <h2 class="cf-title">発達に特性のある子どもとご家族を<span>地域で支える</span>居場所を。</h2>
-    <p class="cf-desc">
-      2026年10月の開所に向け、元保育所を安全で安心できる療育スペースへと改修し、充実したプログラムを提供するための資金を募るクラウドファンディングを準備中です。<br>
-      「どこに相談すればいいかわからない」と悩む保護者の方々に寄り添い、大学機関との連携による専門的で温かい支援を尼崎から届けるため、皆様のあたたかいご支援・ご賛同をお願いいたします。
-    </p>
-    <!-- ※準備が整い次第、hrefの中にプロジェクトページのURLを入れます -->
-    <a href="#crowdfunding" class="cf-btn">プロジェクト詳細はこちら（準備中） ▶</a>
-  </div>
-</section>
+<section class="programs-section" id="support">
+  <div class="section-label">療育プログラム</div>
+  <h2 class="section-title">一人ひとりの発達段階に合わせた<br>専門的な支援アプローチ</h2>
+  <p class="section-sub">一人ひとりのこどものアセスメントを行い、個別支援計画を作成し、それに基づいた支援を行います。<br>※当施設では、原則として保護者の方と一緒にご参加いただきます。</p>
 
-<section class="cards-section" id="support">
-  <div class="section-label">わたしたちの支援</div>
-  <h2 class="section-title">4つの柱で、お子さまとご家族を支えます</h2>
-  <p class="section-sub">早期発見・早期支援を大切に、一人ひとりの発達に合わせた専門的なサポートを提供します。</p>
+  <div class="program-pillars">
+    <h3 class="pillars-title">療育の3つの軸</h3>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="pillar-icon">🤸</div>
+        <h4>感覚統合を用いた身体づくり</h4>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🗣️</div>
+        <h4>ことばとコミュニケーション支援</h4>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🤝</div>
+        <h4>SST<br>（ソーシャルスキルトレーニング）</h4>
+      </div>
+    </div>
+    <p class="pillars-note">※子どもの発達特性に応じて、感覚統合を用いた運動遊び、インリアルアプローチ、TEACCHプログラム、モンテッソーリ教育なども取り入れます。</p>
+  </div>
+
   <div class="cards-grid">
     <div class="card">
-      <div class="card-icon icon-orange">🧩</div>
-      <h3>個別療育プログラム</h3>
-      <p>お子さまの特性と発達段階に合わせた、専門職による個別プログラムを提供します。遊びを通じた自然な発達を促します。</p>
+      <div class="card-badge">1〜5歳児（未就園児・就園児対象）</div>
+      <h3>個別支援 <span>1名 / 1時間</span></h3>
+      <p>知的障害や発達障害のあるこどもと保護者に対して、感覚統合を取り入れた身体づくり、コミュニケーション力の向上、学習の基礎づくり、ソーシャルスキルトレーニングなどを行っています。こどもの発達段階や特性に合わせ、療育指導者とこどもが1対1で取り組む個別支援を行うことで、こどもの力を最大限に伸ばしていきます。</p>
     </div>
+    
     <div class="card">
-      <div class="card-icon icon-green">👨‍👩‍👧</div>
-      <h3>保護者支援・相談</h3>
-      <p>「どこに相談すればいいの？」そんな不安に寄り添います。専門スタッフが保護者の方の悩みを丁寧にお聞きします。</p>
+      <div class="card-badge">4〜5歳児（就園児対象）</div>
+      <h3>小集団 <span>4〜6名程度 / 13:30〜15:30</span></h3>
+      <p>就学を念頭において主に発達障害などのあるこどもへ集団支援を行います。お友達とのやり取りやルールを守ることなどを通して、小学校へスムーズに移行できることを目指します。</p>
     </div>
+
     <div class="card">
-      <div class="card-icon icon-orange">🏫</div>
-      <h3>地域・学校との連携</h3>
-      <p>幼稚園・保育所・小学校と連携し、日常生活の中での継続的な支援体制を整えます。地域全体で子どもたちを見守ります。</p>
+      <div class="card-badge">1〜3歳児（未就園児対象）</div>
+      <h3>グループ療育 <span>6組程度 / 9:30〜11:30</span></h3>
+      <p>親子で一緒に参加していただく療育です。親御さんにもご家庭でのかかわり方を学んでいただけます。保育の中で体験した様々な遊びから感情表現やことばを育て、基本的生活習慣や生活リズムを身につけて集団に慣れ、次の進路へスムーズに移行するステップとなります。</p>
     </div>
+
     <div class="card">
-      <div class="card-icon icon-green">🛡️</div>
-      <h3>安心・安全の環境づくり</h3>
-      <p>元保育所の衛生的なスペースを活用。日頃からの防災教育や災害時の備えにも力を入れ、お子さまを安全にお預かりする環境を整えています。</p>
+      <div class="card-badge">ご家族向け</div>
+      <h3>保護者支援 <span>随時</span></h3>
+      <p>こどもの発達状況や課題について日頃から共通理解を徹底するため、定期的に個別懇談を実施し、こどもの日々の様子などを共有します。子育ての悩み等の相談に随時応じ必要な助言を行うとともに、保護者向け研修も行っています。</p>
     </div>
   </div>
 </section>
@@ -304,13 +309,12 @@
   <div class="contact-org">10月オープン！先行相談を受付中です</div>
   <h2>お気軽にご相談ください</h2>
   <p>「うちの子、少し気になることがあって……」<br>「オープン前に一度話を聞いてみたい」<br>そんな小さな不安や疑問からでも、ぜひお声がけください。<br>専門スタッフが丁寧にお答えします。</p>
-  <!-- ★ GoogleフォームのURLを設定しました -->
   <button class="contact-btn" onclick="window.open('https://forms.gle/7GRmZPnMgCyfXH369', '_blank')">先行相談・見学のお申し込み</button>
 </section>
 
 <footer>
   <div class="footer-logo">陽育こども未来Lab.</div>
-  <p>特定非営利活動法人　陽育こども未来Lab.<br>© 2026 Yoiku Kodomo Mirai Lab. All rights reserved.</p>
+  <p>特定非営利活動法人 陽育こども未来Lab.<br>© 2026 Yoiku Kodomo Mirai Lab. All rights reserved.</p>
 </footer>
 
 </body>
