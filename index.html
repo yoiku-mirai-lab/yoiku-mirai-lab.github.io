@@ -51,6 +51,18 @@
   .btn-secondary{background:#fff;color:var(--orange);border:2px solid var(--orange);padding:12px 28px;border-radius:28px;font-size:15px;cursor:pointer;font-family:inherit;font-weight:500;transition:all .2s}
   .btn-secondary:hover{background:var(--orange-light)}
 
+  /* ===== EVENT BANNER (NEW) ===== */
+  .event-banner{background:var(--orange-light);padding:3rem 2rem;text-align:center;border-bottom:1px solid var(--orange-mid)}
+  .event-inner{max-width:800px;margin:0 auto;background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 8px 30px rgba(232,115,74,.15);border:2px solid var(--orange)}
+  .event-badge{display:inline-block;background:#e83e8c;color:#fff;font-size:14px;font-weight:700;padding:8px 20px;border-radius:24px;margin-bottom:1rem;animation: pulse 2s infinite}
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(232,62,140, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(232,62,140, 0); } 100% { box-shadow: 0 0 0 0 rgba(232,62,140, 0); } }
+  .event-title{font-family:'Noto Serif JP',serif;font-size:clamp(20px,3vw,28px);color:var(--brown);font-weight:700;margin-bottom:1rem}
+  .event-desc{font-size:14px;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem}
+  .event-flyer{margin-bottom:1.5rem}
+  .event-flyer img{max-width:100%;height:auto;border-radius:8px;border:1px solid #ddd}
+  .event-btn{display:inline-flex;align-items:center;gap:8px;background:#e83e8c;color:#fff;border:none;padding:15px 36px;border-radius:30px;font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 15px rgba(232,62,140,0.3)}
+  .event-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(232,62,140,0.4)}
+
   /* ===== NEWS BAR ===== */
   .news-bar{background:#fff;border-bottom:1px solid var(--orange-mid);padding:1rem 2rem;display:flex;justify-content:center}
   .news-inner{display:flex;align-items:center;gap:16px;max-width:800px;width:100%;background:var(--orange-light);padding:12px 20px;border-radius:8px;border:1px dashed var(--orange-mid)}
@@ -143,6 +155,7 @@
     .nav-links{display:none}
     .insta-grid{grid-template-columns:repeat(2,1fr)}
     .news-inner{flex-direction:column;align-items:flex-start;gap:8px}
+    .event-inner{padding:1.5rem}
   }
 </style>
 </head>
@@ -176,16 +189,32 @@
   <h1>すべての子どもに、<br><span>自分らしく</span>育つ場所を。</h1>
   <p class="hero-sub">発達に特性のある子どもとご家族に寄り添い、専門的な療育と温かい支援を提供する「ひなたの森あまがさき」です。NPO法人 陽育こども未来Lab.が運営し、関西国際大学と連携して地域に根ざした支援を実践しています。</p>
   <div class="hero-btns">
-    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">【先行受付】相談・見学を申し込む</button>
-    <button class="btn-secondary" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">療育プログラムを見る</button>
+    <!-- プレイベント用のボタンを目立たせました -->
+    <button class="btn-primary" onclick="document.getElementById('event').scrollIntoView({behavior:'smooth'})">9/16 プレイベント詳細はこちら</button>
+  </div>
+</section>
+
+<!-- ★新設：プレイベントバナー -->
+<section class="event-banner" id="event">
+  <div class="event-inner">
+    <div class="event-badge">特別プレイベント開催！</div>
+    <h2 class="event-title">9月16日(水) プレイベント開催決定！</h2>
+    <p class="event-desc">11月の開所に先駆け、施設の一部や実際の療育プログラムの雰囲気を体験いただけるプレイベントを実施いたします。ぜひお気軽にご参加ください！</p>
+    
+    <div class="event-flyer">
+      <!-- ★ 画像のファイル名が異なる場合は、以下の flyer.jpg の部分を書き換えてください -->
+      <img src="flyer.jpg" alt="9月16日プレイベント チラシ画像">
+    </div>
+    
+    <button class="event-btn" onclick="window.open('https://forms.gle/7GRmZPnMgCyfXH369', '_blank')">プレイベントに参加申し込みする</button>
   </div>
 </section>
 
 <div class="news-bar">
   <div class="news-inner">
-    <div class="news-date">2026.08.02</div>
+    <div class="news-date">2026.09.10</div>
     <div class="news-badge">お知らせ</div>
-    <div class="news-text">11月開所の「ひなたの森あまがさき」に向け、現在指定申請の準備を進めております。先行での個別相談や見学予約は引き続き受付中です！</div>
+    <div class="news-text">9/16(水)にプレイベントを開催いたします！11月開所（指定申請準備中）に向けた先行相談も随時受付中です。</div>
   </div>
 </div>
 
